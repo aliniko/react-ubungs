@@ -3,7 +3,7 @@ import Header  from  "./components/Header"
 import Tasks from "./components/Tasks"
 import AddTask from "./components/AddTask"
 
-// Delete Task
+
 function App() {
   const [tasks, setTasks] = useState([
     {
@@ -46,7 +46,7 @@ setTasks(
         <Header title='Task Tracker' />
         <AddTask />
        {tasks.length > 0 ? ( <Tasks tasks={tasks}
-        onDelete={deleteTask} onToggle={toggleReminder} />): (' No Tasks To Show ') }
+        onDelete={deleteTask} onToggle={toggleReminder} />): (' No Tasks  To Show ') }
       </div>
   );
 }
